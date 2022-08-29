@@ -1,1 +1,2 @@
-# javascript-visual-coding
+# Visual Coding In Javascript
+By Emre Tarakcı
