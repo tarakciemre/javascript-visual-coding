@@ -30,7 +30,7 @@ const sketch = ({ context, width, height }) => {
 
   const mask = {
     radius: width * 0.4,
-    sides: 5,
+    sides: 3,
     x: width * 0.5,
     y: height * 0.58,
   };
