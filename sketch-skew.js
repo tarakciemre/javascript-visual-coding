@@ -30,7 +30,7 @@ const sketch = ({ context, width, height }) => {
 
   const mask = {
     radius: width * 0.4,
-    sides: 3,
+    sides: 5,
     x: width * 0.5,
     y: height * 0.58,
   };
@@ -49,7 +49,6 @@ const sketch = ({ context, width, height }) => {
 
     rects.push({x, y, w, h, fill, stroke});
   }
-
 
   // render function
   return ({ context, width, height }) => {

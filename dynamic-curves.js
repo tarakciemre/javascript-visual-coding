@@ -12,7 +12,9 @@ const sketch = ({ canvas }) => {
   points = [
     new Point({ x: 200, y: 540}),
     new Point({ x: 880, y: 540}),
-    new Point({ x: 400, y: 300, control: true}),
+    new Point({ x: 400, y: 300}),
+    new Point({ x: 800, y: 700}),
+    new Point({ x: 640, y: 700}),
   ];
 
   const curve = new QuadraticCurve({start: points[0], end: points[1], control: points[2]});
@@ -106,6 +108,7 @@ class QuadraticCurve {
 
   draw(context) {
     context.save();
+
     context.beginPath();
     context.moveTo(this.start.x, this.start.y);
     context.quadraticCurveTo(this.control.x, this.control.y, this.end.x, this.end.y);
